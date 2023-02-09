@@ -1,12 +1,16 @@
 <!Doctype html>
+<!-- Specifies that language is English, helps web crawlers I think -->
 <html lang = "en">
     <head>
         <!-- Tells browser that this is UTF-8 unicoding, makes it so it can interpret it -->
+        <meta charset="UTF-8" />
+        <!-- Tell's browsers information about scaling viewport-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About</title>
-        <link rel="icon" href="favicon.ico" />
+        <title>Simon</title>
+        <!-- Don't know why this needs to be specified here, favicon pic never even used, guess will happen later  -->
+        <link rel = "icon" href = "favicon.ico" />
     </head>
-    
+
     <body>
         <header>
             <!-- <sup> for supertext, &reg for trademark R -->
@@ -24,19 +28,16 @@
             <hr/>
         </header>
 
-        <main> 
-            <!-- Just two paragraphs of content, don't need line breaks because they automatically have them as block elements-->
-            <p>
-                Simon is a repetitive memory game where you follow the demonstrated
-                color sequence until you make a mistake. The longer the sequence you
-                repeat, the greater your score.
-              </p>
-        
-              <p>
-                The name Simon is a registered trademark owned by Milton-Bradley. Our
-                use of the name and the game is for non-profit educational use only. No
-                part of this code or program should be used outside of that definition.
-              </p>
+        <main>
+            <h1>Welcome</h1>
+            <p>Login to play</p>
+            <!-- get specifies that info will be sent attached to end of URL, action says where to send info -->
+           <!-- Everything else in form specifies how button will look, for is label, type is box, button is submit button -->
+            <form method="get" action="play.html">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name here" />
+                <button type="submit">Login</button>
+            </form>
         </main>
 
         <footer>
@@ -46,6 +47,5 @@
             <a href="https://github.com/KaidenWilliams/Simon">Go to my GitHub</a>
         </footer>
     </body>
-
 
 </html>
