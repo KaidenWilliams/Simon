@@ -1,13 +1,73 @@
 <!Doctype html>
 <html lang = "en">
     <head>
+        <!-- Tells browser that this is UTF-8 unicoding, makes it so it can interpret it -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scores</title>
+        <link rel="icon" href="favicon.ico" />
     </head>
     
     <body>
+        <header>
+            <!-- <sup> for supertext, &reg for trademark R -->
+            <h1>Simon<sup>&reg;</sup></h1>
+            <nav>
+                <menu>
+                    <!-- li is item in list, makes links bullet points -->
+                    <li><a href = "Home.html">Home</a></li>
+                    <li><a href = "Play.html">Play</a></li>
+                    <li><a href = "Scores.html">Scores</a></li>
+                    <li><a href = "About.html">About</a></li>
+                </menu>
+            </nav>
+            <!-- hr makes a line -->
+            <hr/>
+        </header>
 
+        <main>
+            <!-- Table to store static data entries we put in ourselves-->
+            <table>
+                <!-- thead is table header-->
+                <thead>
+                    <!-- tr is table row-->
+                  <tr>
+                    <!-- th is header content/cell-->
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <!-- td is data entry/cell-->
+                    <td>1</td>
+                    <td>도윤 이</td>
+                    <td>34</td>
+                    <td>May 20, 2021</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Annie James</td>
+                    <td>29</td>
+                    <td>June 2, 2021</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Gunter Spears</td>
+                    <td>7</td>
+                    <td>July 3, 2020</td>
+                  </tr>
+                </tbody>
+              </table>
+        </main>
 
+        <footer>
+            <hr />
+            <span class="text-reset">Kaiden Williams</span>
+            <br />
+            <a href="https://github.com/KaidenWilliams/Simon">Go to my GitHub</a>
+        </footer>
     </body>
-
 
 </html>

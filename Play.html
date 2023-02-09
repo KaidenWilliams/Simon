@@ -1,12 +1,125 @@
 <!Doctype html>
 <html lang = "en">
     <head>
+        <!-- Tells browser that this is UTF-8 unicoding, makes it so it can interpret it -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Play</title>
+        <link rel="icon" href="favicon.ico" />
     </head>
     
     <body>
+        <header>
+            <!-- <sup> for supertext, &reg for trademark R -->
+            <h1>Simon<sup>&reg;</sup></h1>
+            <nav>
+                <menu>
+                    <!-- li is item in list, makes links bullet points -->
+                    <li><a href = "Home.html">Home</a></li>
+                    <li><a href = "Play.html">Play</a></li>
+                    <li><a href = "Scores.html">Scores</a></li>
+                    <li><a href = "About.html">About</a></li>
+                </menu>
+            </nav>
+            <!-- hr makes a line -->
+            <hr/>
+        </header>
 
+        <main>
+            <div class = "players"></div>
+                Player:
+                <span class = "player-name">Mystery player</span>
+            </div>
+            <br/>
 
+            <div>
+                <!-- Text box, readonly means you can't write in it -->
+              <label for="count">Score</label>
+              <input type="text" id="count" value="--" readonly />
+            </div>
+            <br />
+      
+            <!-- reset button -->
+            <div>
+              <button>Reset</button>
+            </div>
+            <br />
+
+            <div>
+                <!-- Entire HTML Simon inserted as table -->
+                <table>
+                <!-- Top half of table-->
+                  <tr>
+                    <!-- Left Quadrant of Half-->
+                    <td>
+                      <button>
+                        <!-- SVG vector Graphics-->
+                        <svg
+                          aria-hidden="true"
+                          viewBox="0 0 100 100"
+                          height="100"
+                          width="100"
+                        >
+                          <!-- SVG
+                            M move <to x,y>
+                            Q quadratic curve <control point x,y> <to x,y>
+                        -->
+                          <path d="M 95,5 95,95 5,95 Q 5,5 95,5" fill="green" />
+                        </svg>
+                      </button>
+                    </td>
+                    <!-- Right Quadrant of Half-->
+                    <td>
+                      <button>
+                        <svg
+                          aria-hidden="true"
+                          viewBox="0 0 100 100"
+                          height="100"
+                          width="100"
+                        >
+                          <path d="M5,5 5,95 95,95 Q 95,5 5,5" fill="red" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                  <!-- Bottom half of table -->
+                  <tr>
+                    <!-- Left Quadrant of Half-->
+                    <td>
+                      <button>
+                        <svg
+                          aria-hidden="true"
+                          viewBox="0 0 100 100"
+                          height="100"
+                          width="100"
+                        >
+                          <path d="M5,5 95,5 95,95 Q 5,95 5,5" fill="blue" />
+                        </svg>
+                      </button>
+                    </td>
+                    <!-- Left Quadrant of Half-->
+                    <td>
+                      <button>
+                        <svg
+                          aria-hidden="true"
+                          viewBox="0 0 100 100"
+                          height="100"
+                          width="100"
+                        >
+                          <path d="M95,5 5,5 5,95 Q 95,95 95,5" fill="yellow" />
+                        </svg>
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+        </main>
+
+        <footer>
+            <hr />
+            <span class="text-reset">Kaiden Williams</span>
+            <br />
+            <a href="https://github.com/KaidenWilliams/Simon">Go to my GitHub</a>
+        </footer>
     </body>
 
 
