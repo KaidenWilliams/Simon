@@ -2,30 +2,45 @@
 <html lang = "en">
     <head>
         <!-- Tells browser that this is UTF-8 unicoding, makes it so it can interpret it -->
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>About</title>
         <!-- Puts simon image in search bar and tab -->
         <link rel="icon" href="favicon.ico" />
+
+        <!-- Boostrap stuff, href links to code, rel specifies relationship, integrity makes sure it is not malicious, crossorigin is something to do with website credential -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+      />
+
     </head>
     
-    <body>
-        <header>
-            <!-- <sup> for supertext, &reg for trademark R -->
-            <h1>Simon<sup>&reg;</sup></h1>
-            <nav>
-                <menu>
-                    <!-- li is item in list, makes links bullet points -->
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "play.html">Play</a></li>
-                    <li><a href = "scores.html">Scores</a></li>
-                    <li><a href = "about.html">About</a></li>
+    <body class="bg-dark text-light">
+        <header class="container-fluid">
+            <nav class="navbar fixed-top navbar-dark">
+                <a class="navbar-brand" href="#">Simon<sup>&reg;</sup></a>
+                <menu class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="play.html">Play</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="scores.html">Scores</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About</a>
+                  </li>
                 </menu>
-            </nav>
-            <!-- hr makes a line -->
-            <hr/>
+              </nav>
         </header>
 
-        <main> 
+        <main class="container-fluid bg-secondary text-center"> 
+            <div>
             <!-- Just two paragraphs of content, don't need line breaks because they automatically have them as block elements-->
             <p>
                 Simon is a repetitive memory game where you follow the demonstrated
@@ -38,13 +53,18 @@
                 use of the name and the game is for non-profit educational use only. No
                 part of this code or program should be used outside of that definition.
               </p>
+            </div>
         </main>
 
-        <footer>
-            <hr />
-            <span class="text-reset">Kaiden Williams</span>
-            <br />
-            <a href="https://github.com/KaidenWilliams/Simon">Go to my GitHub</a>
+        <footer class="bg-dark text-dark text-muted">
+            <div class="container-fluid">
+                <span class="text-reset">Kaiden Williams</span>
+                <a
+                  class="text-reset"
+                  href="https://github.com/KaidenWilliams/Simon"
+                  >Source</a
+                >
+            </div>
         </footer>
     </body>
 
