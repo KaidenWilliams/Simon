@@ -10,6 +10,7 @@
         <!-- Puts simon image in search bar and tab -->
         <link rel = "icon" href = "favicon.ico" />
 
+        <script src = "Login.js"></script>
         <link rel="stylesheet" href="mystyle.css" />
 
         <!-- Boostrap stuff, href links to code, rel specifies relationship, integrity makes sure it is not malicious, crossorigin is something to do with website credential -->
@@ -49,12 +50,11 @@
         <div>
             <h1>Welcome</h1>
             <p>Login to play</p>
-            <!-- get specifies that info will be sent attached to end of URL, action says where to send info -->
-           <!-- Everything else in form specifies how button will look, type is box, button is submit button -->
-            <form method="get" action="Play.html">
-                <input type="text" id="name" placeholder="Your name here" />
-                <button type="submit" class="btn btn-primary">Login</button>
-            </form>
+            <!-- Form not needed when Javascript used, replaced by onclick or addevent listener in button -->
+            <div>
+              <input type="text" id="name" placeholder="Your name here" />
+              <button class = "btn btn-primary" onclick = "login()">Login</button>
+            </div>
         </div>
         </main>
 
