@@ -40,7 +40,7 @@
   
     if (response?.status === 200) {
       localStorage.setItem('userName', userName);
-      window.location.href = 'play.html';
+      window.location.href = 'Play.html';
     } else {
       const modalEl = document.querySelector('#msgModal');
       modalEl.querySelector('.modal-body').textContent = `⚠ Error: ${body.msg}`;
@@ -50,7 +50,7 @@
   }
   
   function play() {
-    window.location.href = 'play.html';
+    window.location.href = 'Play.html';
   }
   
   function logout() {
